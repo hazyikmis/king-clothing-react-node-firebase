@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const MenuItemContainer = styled.div`
-	height: ${({ size }) => (size ? '380px' : '240px')}
+  height: ${({ size }) => (size ? '380px' : '240px')};
 	min-width: 30%;
 	overflow: hidden;
 	flex: 1 1 auto;
@@ -21,7 +21,7 @@ export const MenuItemContainer = styled.div`
 		}
 
 		& .content {
-			opacity: 0.9;
+			opacity: 0.8;
 		}
 	}
 
@@ -37,6 +37,8 @@ export const MenuItemContainer = styled.div`
     height: 200px;
   }
 `;
+
+//@media queries have higher specifity anything inside our styles!!!
 
 MenuItemContainer.displayName = 'MenuItemContainer';
 
